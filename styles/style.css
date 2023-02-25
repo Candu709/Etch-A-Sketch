@@ -23,6 +23,8 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /*accidental select and dragging bugs pointerup events*/
+  user-select: none;
 }
 
 .pixel {
@@ -30,8 +32,13 @@ main {
   width: var(--side);
   height: var(--side);
   border: 1px rgba(0, 0, 0, 0.1) solid;
+
 }
 
 .pixel:hover {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.colored {
+  background: black;
 }
