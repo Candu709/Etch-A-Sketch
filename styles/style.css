@@ -1,10 +1,4 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
+@import 'reset.css';
 
 body {
   background-color: #333;
@@ -17,8 +11,8 @@ main {
 .sketchGrid {
   flex: 0 0 auto;
   margin: auto;
-  width: 90vmin;
-  height: 90vmin;
+  height: 90cqmin;
+  width: 90cqmin;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
