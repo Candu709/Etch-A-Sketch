@@ -5,13 +5,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family:
+    Comic Sans MS,
+    TSCu_Comic,
+    sans-serif;
+  color: white;
+}
+
+h1 {
+  text-shadow: 1 1 black;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header, footer {
+  --color: #ffffff1a;
+  background: var(--color);
+  box-shadow: 0 0 1em 1em var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div.container {
+  width: 90vmin;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sketchGrid {
   flex: 0 0 auto;
-  margin: auto;
-  height: 90cqmin;
-  width: 90cqmin;
+  height: 85cqmin;
+  width: 85cqmin;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
@@ -29,10 +59,42 @@ body {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-header, footer {
-  --color: rgba(255, 255, 255, 0.1);
+button.settings,
+header .spacer {
+  margin: 1em;
+  --color: rgba(255, 255, 255, 0.5);
+  background-color: var(--color);
+  border-radius: 50%;
+  border: 2px rgba(0, 0, 0, 0.5) solid;
+  font-size: small;
+  height: 3em;
+  width: 3em;
+  aspect-ratio: 1/1;
   display: flex;
-  background: var(--color);
-  justify-content: space-evenly;
-  box-shadow: 0 0 2vh 2vh var(--color);
+  justify-content: center;
+  align-items: center;
+}
+
+button.settings:hover span  {
+  transform: rotate(180deg);
+  transition: .5s;
+}
+
+button:hover {
+  transform: scale(1.25);
+  transition: .5s;
+  box-shadow:
+  0 0 2px 2px rgba(255, 255, 255, 0.5),
+  inset 0 0 4px 2px rgba(0, 0, 0, 0.5);
+  /* border: 2px #ffffff00 solid; */
+}
+
+button:active{
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5);
+  filter: invert();
+}
+
+.spacer {
+  visibility: hidden;
+  user-select: none;
 }
