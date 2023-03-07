@@ -1,0 +1,65 @@
+body {
+  --grid-side:50vmin;
+  height: 100dvh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr --grid-side 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  ". hd ."
+  ". mn ."
+  "ft ft ft"
+  ;
+}
+
+header {
+  margin-top: 1em;
+  grid-area: hd;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: ". title menu";
+}
+
+h1 {
+  grid-area: title;
+  margin: auto;
+  text-align: center;
+}
+
+button.settings {
+  margin: 1em 0 1em auto;
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  grid-area: mn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketchGrid {
+  flex: 1 1 auto;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pixel {
+  width: 1vd;
+  height: 1dvi;
+}
+
+footer {
+  grid-area: ft;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer>p {
+  margin: 1em;
+}

@@ -1,51 +1,12 @@
-@import 'reset.css';
-
 body {
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-family:
     Comic Sans MS,
     TSCu_Comic,
     sans-serif;
-  color: white;
 }
 
 h1 {
-  text-shadow: 1 1 black;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-header, footer {
-  --color: #ffffff1a;
-  background: var(--color);
-  box-shadow: 0 0 1em 1em var(--color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-header div.container {
-  width: 90vmin;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sketchGrid {
-  flex: 0 0 auto;
-  height: 85cqmin;
-  width: 85cqmin;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  text-shadow:0 0 1px var(--color-halo);
 }
 
 .pixel {
@@ -59,20 +20,12 @@ header div.container {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-button.settings,
-header .spacer {
-  margin: 1em;
-  --color: rgba(255, 255, 255, 0.5);
-  background-color: var(--color);
-  border-radius: 50%;
-  border: 2px rgba(0, 0, 0, 0.5) solid;
-  font-size: small;
-  height: 3em;
+button.settings {
   width: 3em;
-  aspect-ratio: 1/1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 3em;
+  font-size: small;
+  border-radius: 100%;
+  border: 2px rgba(0, 0, 0, 0.5) solid;
 }
 
 button.settings:hover span  {
