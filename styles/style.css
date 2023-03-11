@@ -1,53 +1,54 @@
-body {
-  font-family:
-    Comic Sans MS,
-    TSCu_Comic,
-    sans-serif;
-}
+  body {
+    font-family:
+      Comic Sans MS,
+      TSCu_Comic,
+      sans-serif;
+  }
 
-h1 {
-  text-shadow:0 0 1px var(--color-halo);
-}
+  h1 {
+    text-shadow: 0 0 1px var(--color-halo);
+  }
 
-.pixel {
-  --side: calc(100% / var(--size));
-  width: var(--side);
-  height: var(--side);
-  border: 1px rgba(0, 0, 0, 0.1) solid;
-}
+  .pixel {
+    --side: calc(100% / var(--size));
+    width: var(--side);
+    height: var(--side);
+    border: 1px rgb(0 0 0 / 0.1) solid;
+  }
 
-.pixel:hover {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-}
+  .pixel:hover {
+    box-shadow: 0 0 10px 5px rgb(0 0 0 / 0.1);
+  }
 
-button.settings {
-  width: 3em;
-  height: 3em;
-  font-size: small;
-  border-radius: 100%;
-  border: 2px rgba(0, 0, 0, 0.5) solid;
-}
+  button.settings {
+    width: 3em;
+    height: 3em;
+    font-size: small;
+    border-radius: 100%;
+    border: 2px rgb(0 0 0 / 0.5) solid;
+  }
 
-button.settings:hover span  {
-  transform: rotate(180deg);
-  transition: .5s;
-}
+  button.settings:hover span {
 
-button:hover {
-  transform: scale(1.25);
-  transition: .5s;
-  box-shadow:
-  0 0 2px 2px rgba(255, 255, 255, 0.5),
-  inset 0 0 4px 2px rgba(0, 0, 0, 0.5);
-  /* border: 2px #ffffff00 solid; */
-}
+    transform: rotate(180deg);
+    transition: .5s;
+  }
 
-button:active{
-  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5);
-  filter: invert();
-}
+  button:hover {
+    transform: scale(1.25);
+    transition: .5s;
+    box-shadow:
+      0 0 2px 2px rgb(255 255 255 / 0.5),
+      inset 0 0 4px 2px rgb(0 0 0 / 0.5);
+    /* border: 2px #ffffff00 solid; */
+  }
 
-.spacer {
-  visibility: hidden;
-  user-select: none;
-}
+  button:active {
+    box-shadow: 0 0 2px 2px rgb(255 255 255 / 0.5);
+    filter: invert();
+  }
+
+  .spacer {
+    visibility: hidden;
+    user-select: none;
+  }

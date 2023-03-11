@@ -1,14 +1,14 @@
 body {
-  --grid-side:50vmin;
+  --grid-side: 50vmin;
   height: 100dvh;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr --grid-side 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-  ". hd ."
-  ". mn ."
-  "ft ft ft"
+    ". hd ."
+    ". mn ."
+    "ft ft ft"
   ;
 }
 
@@ -16,7 +16,7 @@ header {
   margin-top: 1em;
   grid-area: hd;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas: ". title menu";
 }
 
